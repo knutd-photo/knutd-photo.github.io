@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>КНУТД музей фотографії</title>
+    <meta charset="utf-8" />
+    <link href="../../../../../Styles/Style.css" rel="stylesheet" />
+    <link href="../../../../../Styles/lightbox.css" rel="stylesheet" />
+    <link href="../../../../../Styles/Paginate.css" rel="stylesheet" />
+    <script src="../../../../../scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../../../../scripts/jquery.easyPaginate.js"></script>
+</head>
+<body> 
+ <canvas id="main-canvas"style="z-index:-1;position:fixed;top:0;left:0;"></canvas>
+    <div id="header">
+        <div id="logo">
+            <a href="../../../../../uaMainPage.html">
+                <img src="../../../../../img/layout/logo/logoUa.png" />
+            </a>
+        </div>
+        
+    </div>
+    <div id="container">
+        <div id="menu">
+            <div id="menuButton">
+                <ul>
+                    <li>
+                        <a href="#">ПРО НАС</a>
+                        <ul>
+                            <li><span></span><a href="../../../../../ua/AboutUs/uaHistory.html">історія</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">КОЛЕКЦІЇ</a>
+                        <ul>
+                            <li>
+                                <span></span><a href="#">друкована продукція</a>
+                                <ul>
+                                    <li><span></span><a href="../../../../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a></li>
+                                    <li><span></span><a href="../../../../../ua/Collection/PrintedProducts/Books/Books.html">книги</a></li>
+                                    <li><span></span><a href="../../../../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../../../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна продукція</a></li>
+                            <li>
+                                <span></span><a href="#">фотографія</a>
+                                <ul>
+                                    <li><span></span><a href="../../../../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a></li>
+                                    <li><span></span><a href="../../../../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії студентів</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../../../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../../../ua/Events/uaEvents.html">ЗАХОДИ</a></li>
+                    <li>
+                        <a href="#">ВИСТАВКИ</a>
+                        <ul>
+                            <li><span></span><a href="../../../../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a></li>
+                            <li><span></span><a href="../../../../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a></li>
+                            <li><span></span><a href="../../../../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a></li>
+                            <li><span></span><a href="../../../../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ПРОГРАМА НАВЧАННЯ</a>
+                        <ul>
+                            <li><span></span><a href="../../../../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсії</a></li>
+                            <li><span></span><a href="../../../../../ua/EducationProgram/uaEducationSchool.html">школи та університети</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="opening"><p>ГОДИНИ РОБОТИ:</p></div>
+                <div class="schedule">
+                    <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                    <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+                </div>
+                <div class="contactInfo">
+                    <p class="contactInfo">КНУТД, Київ</p>
+                    <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                    <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+                </div>
+                <div id="map">
+                    <a href="">Карта</a>
+                </div>
+                <div id="socialLinks">
+                    <a id="faceBook" href="">
+                        <img src="../../../../../img/facebook.jpg" />
+                    </a>
+                    <a id="google" href="">
+                        <img src="../../../../../img/google.jpg" />
+                    </a>
+                    <a id="tweet" href="">
+                        <img src="../../../../../img/tweet.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="slider">
+                <ul>
+                    <li><img src="../../../../../img/img0.jpg" /></li>
+                    <li><img src="../../../../../img/slider2.jpg" /></li>
+                    <li><img src="../../../../../img/slider3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="news">
+                <div id="easyPaginate">
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K004м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K004м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K005м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K005м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K006м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K006м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K007м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K007м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K011м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K011м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K012м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K012м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K013м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K013м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K014м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K014м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K015м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K015м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K016м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K016м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K023м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K023м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K024м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K024м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K025м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K025м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K026м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K026м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K027м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K027м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K031м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K031м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K032м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K032м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K033м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K033м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K037м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K037м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K042м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K042м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K043м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K043м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K046м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K046м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K048м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K048м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K049м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K049м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K052м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K052м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K053м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K053м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K055м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K055м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K056м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K056м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K057м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K057м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K058м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K058м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K059м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K059м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K060м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K060м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K061м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K061м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K062м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K062м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K063м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K063м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K064м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K064м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K065м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K065м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K067м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K067м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K070м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K070м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K077м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K077м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K080м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K080м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../../img/Collections/PrintedProducts/Magazines/Library/K081м.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../../img/Collections/PrintedProducts/Magazines/Library/K081м.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftSide">
+            <div id="footLogo">
+                <img src="../../../../../img/layout/logo/logoUa.png" />
+            </div>
+            <div class="contactInfo">
+                <p class="contactInfo">КНУТД, Київ</p>
+                <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+            </div>
+            <div class="schedule">
+                <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+            </div>
+        </div>
+        <div id="rightSide">
+            <div class="footerInfo">
+                <p><a>ПРО НАС</a></p>
+                <a href="../../../../../ua/AboutUs/uaHistory.html">історія</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>КОЛЕКЦІЇ</a></p>
+                <a href="../../../../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a>
+                <a href="../../../../../ua/Collection/PrintedProducts/Books/Books.html">книги</a>
+                <a href="../../../../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a>
+                <a href="../../../../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна <br>продукція</a>
+                <a href="../../../../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a>
+                <a href="../../../../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії <br>студентів</a>
+                <a href="../../../../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../../../../ua/Events/uaEvents.html">ЗАХОДИ</a></p>
+            </div>
+            <div class="footerInfo">
+                <p><a>ВИСТАВКИ</a></p>
+                <a href="../../../../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a>
+                <a href="../../../../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a>
+                <a href="../../../../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a>
+                <a href="../../../../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>ПРОГРАМА<br /> НАВЧАННЯ</a></p>
+                <a href="../../../../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсія</a>
+                <a href="../../../../../ua/EducationProgram/uaEducationSchool.html">школи та<br /> університети</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../../../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../../../../scripts/AcordionMenu.js"></script>
+    <script src="../../../../../scripts/SliderScript.js"></script>
+    <script src="../../../../../scripts/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            'positionFromTop': 150
+        });
+
+        $('#easyPaginate').easyPaginate({
+            paginateElement: '.row',
+            elementsPerPage: 3,
+            effect: 'default'
+        });
+    </script>
+<script src="../../../../../js/TweenLite.min.js"></script>
+<script src="../../../../../js/EasePack.min.js"></script>
+<script src="../../../../../js/rAF.js"></script>
+<script src="../../../../../js/canvasScript.js"></script>
+</body>
+</html>

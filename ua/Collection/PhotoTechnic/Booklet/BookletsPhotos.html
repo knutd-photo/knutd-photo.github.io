@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>КНУТД музей фотографії</title>
+    <meta charset="utf-8" />
+    <link href="../../../../Styles/Style.css" rel="stylesheet" />
+    <link href="../../../../Styles/lightbox.css" rel="stylesheet" />
+    <link href="../../../../Styles/Paginate.css" rel="stylesheet" />
+    <script src="../../../../scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../../../scripts/jquery.easyPaginate.js"></script>
+</head>
+<body> 
+ <canvas id="main-canvas"style="z-index:-1;position:fixed;top:0;left:0;"></canvas>
+    <div id="header">
+        <div id="logo">
+            <a href="../../../../uaMainPage.html">
+                <img src="../../../../img/layout/logo/logoUa.png" />
+            </a>
+        </div>
+       
+    </div>
+    <div id="container">
+        <div id="menu">
+            <div id="menuButton">
+                <ul>
+                    <li>
+                        <a href="#">ПРО НАС</a>
+                        <ul>
+                            <li><span></span><a href="../../../../ua/AboutUs/uaHistory.html">історія</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">КОЛЕКЦІЇ</a>
+                        <ul>
+                            <li>
+                                <span></span><a href="#">друкована продукція</a>
+                                <ul>
+                                    <li><span></span><a href="../../../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a></li>
+                                    <li><span></span><a href="../../../../ua/Collection/PrintedProducts/Books/Books.html">книги</a></li>
+                                    <li><span></span><a href="../../../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна продукція</a></li>
+                            <li>
+                                <span></span><a href="#">фотографія</a>
+                                <ul>
+                                    <li><span></span><a href="../../../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a></li>
+                                    <li><span></span><a href="../../../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії студентів</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../../ua/Events/uaEvents.html">ЗАХОДИ</a></li>
+                    <li>
+                        <a href="#">ВИСТАВКИ</a>
+                        <ul>
+                            <li><span></span><a href="../../../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a></li>
+                            <li><span></span><a href="../../../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a></li>
+                            <li><span></span><a href="../../../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a></li>
+                            <li><span></span><a href="../../../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ПРОГРАМА НАВЧАННЯ</a>
+                        <ul>
+                            <li><span></span><a href="../../../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсії</a></li>
+                            <li><span></span><a href="../../../../ua/EducationProgram/uaEducationSchool.html">школи та університети</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="opening"><p>ГОДИНИ РОБОТИ:</p></div>
+                <div class="schedule">
+                    <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                    <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+                </div>
+                <div class="contactInfo">
+                    <p class="contactInfo">КНУТД, Київ</p>
+                    <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                    <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+                </div>
+                <div id="map">
+                    <a href="">Карта</a>
+                </div>
+                <div id="socialLinks">
+                    <a id="faceBook" href="">
+                        <img src="../../../../img/facebook.jpg" />
+                    </a>
+                    <a id="google" href="">
+                        <img src="../../../../img/google.jpg" />
+                    </a>
+                    <a id="tweet" href="">
+                        <img src="../../../../img/tweet.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="slider">
+                <ul>
+                    <li><img src="../../../../img/img0.jpg" /></li>
+                    <li><img src="../../../../img/slider2.jpg" /></li>
+                    <li><img src="../../../../img/slider3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="news">
+                <div id="easyPaginate">
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ARSAT 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ARSAT 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ARSAT 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ARSAT 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 03.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 03.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 04.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 04.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 06.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 19 M 06.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 03.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 03.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 04.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 04.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 05.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 05.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 06.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV 35 AM 06.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-60 TTL 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-60 TTL 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-60 TTL 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-60 TTL 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-88 СM 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-88 СM 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-88 СM 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a KIEV-88 СM 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a MC GRANIT - 11m 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a MC GRANIT - 11m 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a MC GRANIT - 11m 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a MC GRANIT - 11m 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a PCS ARSAT H 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a PCS ARSAT H 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a PCS ARSAT H 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a PCS ARSAT H 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Гелиос 123 Н 1.4 50 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Гелиос 123 Н 1.4 50 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Гелиос 123 Н 1.4 50 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Гелиос 123 Н 1.4 50 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 03.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 03.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 04.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ГРАНИТ-11 04.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ЗМ 3 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ЗМ 3 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ЗМ 3 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ЗМ 3 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a КАЛЕЙНАР - 3 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a КАЛЕЙНАР - 3 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a КАЛЕЙНАР-3 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a КАЛЕЙНАР-3 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Кассета одноступеннного процеса к Киев 88 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Кассета одноступеннного процеса к Киев 88 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Кассета одноступеннного процеса к Киев 88 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Кассета одноступеннного процеса к Киев 88 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев - 35А 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев - 35А 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев - 35А 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев - 35А 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 21.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 21.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 22.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 22.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 23.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 23.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 24.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 24.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 25.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 25.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 26.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 26.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 27.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 27.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 28.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 10 28.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 17 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 17 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 17 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 17 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 18 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 18 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 18 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 18 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 03.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 03.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 04.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 04.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 21.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 21.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 22.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 22.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 23.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 23.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 24.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 4 24.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 5 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 5 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 5 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 5 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 88 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 88 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 88 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 88 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 90 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 90 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 90 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Киев 90 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a КИЕВ-66 УНИВЕРСАЛ 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a КИЕВ-66 УНИВЕРСАЛ 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a КИЕВ-66 УНИВЕРСАЛ 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a КИЕВ-66 УНИВЕРСАЛ 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Комплект КІЕВ 80  01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Комплект КІЕВ 80  01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Комплект КІЕВ 80  02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Комплект КІЕВ 80  02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 10 автомат 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 10 автомат 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 10 автомат 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 10 автомат 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 20 автомат 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 20 автомат 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 20 автомат 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР 20 автомат 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР – 38 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР – 38 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР – 38 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР – 38 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 21.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 21.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 22.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 22.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 31.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 31.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 33.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МИР-38 33.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС ВЕГА 28 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС ВЕГА 28 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС Вега 28 1.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС Вега 28 1.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС Вега 28 2.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС Вега 28 2.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС ВЕГА – 28 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС ВЕГА – 28 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС ТЕЛЕАР-5 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС ТЕЛЕАР-5 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a МС ТЕЛЕАР-5 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a МС ТЕЛЕАР-5 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ТЕЛЕАР-Н 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ТЕЛЕАР-Н 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ТЕЛЕАР-Н 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ТЕЛЕАР-Н 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ЮПИТЕР-36 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ЮПИТЕР-36 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a ЮПИТЕР-36 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a ЮПИТЕР-36 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Яшма 4Н 2.8 300 01.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Яшма 4Н 2.8 300 01.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="leftPhoto contentItem albumPhoto">
+                            <a href="../../../../img/Collections/PhotoTechnic/Booklet/a Яшма 4Н 2.8 300 02.jpg" data-lightbox="labraryPhoto" data-title="">
+                                <img src="../../../../img/Collections/PhotoTechnic/Booklet/a Яшма 4Н 2.8 300 02.jpg" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="centerPhoto contentItem albumPhoto" style="visibility: hidden">
+                            <a href="" data-lightbox="" data-title="">
+                                <img src="" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightPhoto contentItem albumPhoto" style="visibility: hidden">
+                            <a href="" data-lightbox="" data-title="">
+                                <img src="" />
+                                <div class="showLarge">
+                                    <p>ЗБІЛЬШИТИ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftSide">
+            <div id="footLogo">
+                <img src="../../../../img/layout/logo/logoUa.png" />
+            </div>
+            <div class="contactInfo">
+                <p class="contactInfo">КНУТД, Київ</p>
+                <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+            </div>
+            <div class="schedule">
+                <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+            </div>
+        </div>
+        <div id="rightSide">
+            <div class="footerInfo">
+                <p><a>ПРО НАС</a></p>
+                <a href="../../../../ua/AboutUs/uaHistory.html">історія</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>КОЛЕКЦІЇ</a></p>
+                <a href="../../../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a>
+                <a href="../../../../ua/Collection/PrintedProducts/Books/Books.html">книги</a>
+                <a href="../../../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a>
+                <a href="../../../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна <br>продукція</a>
+                <a href="../../../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a>
+                <a href="../../../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії <br>студентів</a>
+                <a href="../../../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../../../ua/Events/uaEvents.html">ЗАХОДИ</a></p>
+            </div>
+            <div class="footerInfo">
+                <p><a>ВИСТАВКИ</a></p>
+                <a href="../../../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a>
+                <a href="../../../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a>
+                <a href="../../../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a>
+                <a href="../../../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>ПРОГРАМА<br /> НАВЧАННЯ</a></p>
+                <a href="../../../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсія</a>
+                <a href="../../../../ua/EducationProgram/uaEducationSchool.html">школи та<br /> університети</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../../../scripts/AcordionMenu.js"></script>
+    <script src="../../../../scripts/SliderScript.js"></script>
+    <script src="../../../../scripts/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            'positionFromTop': 150
+        });
+
+        $('#easyPaginate').easyPaginate({
+            paginateElement: '.row',
+            elementsPerPage: 3,
+            effect: 'default'
+        });
+    </script>
+<script src="../../../../js/TweenLite.min.js"></script>
+<script src="../../../../js/EasePack.min.js"></script>
+<script src="../../../../js/rAF.js"></script>
+<script src="../../../../js/canvasScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+﻿body {
+    background: #ffffff;
+    color: #000000;
+    font-family: Calibri, Arial, Times New Roman;
+    font-size: 15px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+/*------------------------------------------
+    Header
+--------------------------------------------*/
+
+#header {
+    position: relative;
+    width: 880px;
+    height: 106px;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+#logo {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    float: left;
+    padding-bottom: 0;
+}
+
+#languages {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+.lngBtn {
+    padding: 0 10px;
+    color: #000000;
+    background: lightgray;
+    margin-left: 10px;
+}
+
+    .lngBtn:hover {
+        padding: 0 10px;
+        color: #ffffff;
+        background: #dc001a;
+    }
+
+#searchLine {
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+/*------------------------------------------
+    Container
+--------------------------------------------*/
+
+#container {
+    width: 880px;
+    min-height: 900px;
+    margin: auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+/*--- Menu ---*/
+
+#menu {
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+ul {
+    width: 200px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#menuButton ul ul {
+        display: none;
+    }
+
+    #menuButton > ul > li {
+        border-bottom: 1px dotted #dc001a;
+        width: 162px;
+        padding: 2px 0 2px 0;
+        margin: 1px;
+    }
+
+        #menuButton > ul > li > a {
+            display: block;
+            width: 162px;
+            color: #dc001a;
+            padding-left: 3px;
+        }
+
+            #menuButton > ul > li > a:hover {
+                color: #ffffff;
+                background: #dc001a;
+            }
+
+        #menuButton > ul > li > ul > li > a {
+            position: relative;
+            left: 10px;
+            margin: 0;
+            color: #595959;
+            line-height: 1.5;
+        }
+
+        #menuButton > ul > li > ul > li > span {
+            float: left;
+            width: 14px;
+            height: 19px;
+        }
+
+        #menuButton > ul > li > ul > li:hover > span  {
+            background-image: url('../img/arrow.png');
+            background-repeat: no-repeat;
+        }
+
+        #menuButton > ul > li > ul > li > ul > li > a {
+            position: relative;
+            left: 10px;
+            margin: 0;
+            color: #595959;
+            line-height: 1.5;
+        }
+
+        #menuButton > ul > li > ul > li > ul > li > span {
+            float: left;
+            width: 14px;
+            height: 19px;
+        }
+
+        #menuButton > ul > li > ul > li> ul > li:hover > span {
+            background-image: url('../img/arrow.png');
+            background-repeat: no-repeat;
+        }
+
+        #menuButton > ul > li.has-sub.active {
+            border-bottom: none;
+        }
+
+/*--- Info ---*/
+
+#info {
+    width: 162px;
+    height: 200px;
+    margin-left: 10px;
+    border: 2px solid lightgrey;
+}
+
+#opening {
+    width: 162px;
+    height: 29px;
+    background: gray;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+    #opening p {
+        position: relative;
+        top: 6px;
+        left: 30px;
+        font-size: 13px;
+    }
+
+#map{
+    visibility: hidden;
+}
+
+#map a {
+    border-bottom: 1px solid #000000;
+    margin-left: 10px;
+    color: #000000;
+}
+
+#socialLinks {
+    visibility: hidden;
+    margin: 20px 0 0 10px;
+}
+
+/*--- Content ---*/
+
+#content {
+    float: left;
+    width: 630px;
+}
+
+.row {
+    width: 630px;
+}
+
+/*--- Slider ---*/
+
+.slider {
+    width: 630px;
+    height: 246px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    .slider ul,
+    .slider li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .slider ul {
+        width: 99999px;
+    }
+
+        .slider ul li {
+            list-style-type: none;
+            float: left;
+            width: 627px;
+            height: 246px;
+        }
+
+    .slider .nav {
+        position: absolute;
+        right: 15px;
+        bottom: 12px;
+    }
+
+        .slider .nav span {
+            -ms-opacity: 0.9;
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 8px 0 0;
+            width: 8px;
+            height: 8px;
+            -ms-border-radius: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            -webkit-box-shadow: 0 1px 2px #000;
+            -ms-box-shadow: 0 1px 2px #000;
+            box-shadow: 0 1px 2px #000;
+        }
+
+.slider .nav span.on {
+                background: #dc001a;
+            }
+
+/*--- News ---*/
+
+.news {
+    width: 630px;
+    overflow: hidden;
+}
+
+.albumImg > img{
+    width: 165px;
+    height: 200px;
+}
+
+.albumPhoto> a > img{
+	display: inline-block;
+    width: 165px;
+    height: 200px;
+}
+
+/*--------------------------------------------
+    Footer
+----------------------------------------------*/
+
+#footer {
+    clear: both;
+    border-top: 2px solid gray;
+    width: 880px;
+    margin: 20px auto 20px;
+    overflow: hidden;
+}
+
+#leftSide {
+    float: left;
+    margin-top: 10px;
+}
+
+#footLogo {
+    margin-left: 10px;
+}
+
+.schedule {
+    margin: 20px 0 0 10px;
+}
+
+.contactInfo {
+    margin: 10px 0 0 10px;
+}
+
+p.contactInfo {
+    margin: 2px 0;
+}
+
+#rightSide {
+    padding-left: 35px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.footerInfo {
+    float: left;
+    margin-right: 30px;
+}
+.footerInfo p {
+    margin: 0;
+}
+
+    .footerInfo p a{
+        font-size: 13px;
+        padding: 0;
+        color: #dc001a;
+        text-decoration: none;
+    }
+
+    .footerInfo a {
+        display: block;
+        padding: 3px 0;
+        color: #000000;
+        text-decoration: none;
+    }
+
+/*---------------------------------------
+                About Us
+-----------------------------------------*/
+
+.content {
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.contentImage {
+    float: left;
+    overflow: hidden;
+    padding-top: 4px;
+}
+
+.contentTxt {
+    width: 404px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+h3 a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.historyText {
+    text-align: justify;
+}
+
+/*---------------------------------------
+                AboutUs/OurProject
+-----------------------------------------*/
+
+.contentProjImage {
+    float: left;
+    margin-right: 20px;
+}
+
+.contentProjTxt p {
+    text-align: justify;
+}
+
+.contentProjTxt a {
+    color: #dc001a;
+    text-decoration: none;
+}
+
+.historyTitle {
+    font-weight: bold;
+    font-size: 12pt;
+}
+/*---------------------------------------
+                Photography
+-----------------------------------------*/
+
+    #albumName {
+    color: #dc001a;
+    font-size: 12pt;
+    margin-top: 5px;
+}
+
+.contentItem {
+    position: relative;
+    display: block;
+    float: left;
+    width: 165px;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.contentItem:hover .showLarge {
+    -ms-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.contentItem:hover .showLarge p {
+    -ms-opacity: 1;
+    opacity: 1;
+}
+
+.leftPhoto {
+    margin-right: 11px;
+    padding-right: 30px;
+}
+
+.centerPhoto {
+    margin-right: 31px;
+    padding-left: 30px;
+}
+
+.rightPhoto {
+    margin-right: 0;
+    padding-left: 30px;
+}
+
+.showLarge {
+    position: absolute;
+    background-color: #000000;
+    width: 165px;
+    height: 200px;
+    z-index: 10;
+    top: 0;
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+.showLarge > p {
+    margin: 70px 20px;
+    color: #fff;
+    border: 2px solid #ffffff;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.paging {
+    margin: 20px 0 0 0;
+}
+
+.paging div {
+    width: 4%;
+    margin: auto;
+}
+
+.paging a {
+    color: #dc001a;
+}
+
+/*---------------------------------------
+       Albums
+-----------------------------------------*/
+
+.contentItem > p {
+    color: #dc001a;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 165px;
+    height: 40px;
+}
+
+/*---------------------------------------
+       Collection first page (periodicals, 
+       technique, photography)
+-----------------------------------------*/
+
+#viewCollection a {
+    color: #dc001a;
+    text-decoration: underline;
+}
+
+/*---------------------------------------
+       Collection/Photography
+-----------------------------------------*/
+
+#details > p {
+    margin-top: 8px;
+    font-size: 10pt;
+}
+
+/*---------------------------------------
+       Collection/Periodicals
+-----------------------------------------*/
+
+.news > div > p {
+    text-align: justify;
+}
+
+/*---------------------------------------
+                Events
+-----------------------------------------*/
+
+.namePage {
+    font-size: 12pt;
+    margin: 10px 0 0 0;
+}
+
+a .eventItem {
+    color: #000000;
+}
+
+.eventItem {
+    border-bottom: 1px dashed gray;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.eventImg {
+    float: left;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.eventImg > img{
+    width: 195px;
+}
+
+.eventTxt {
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+
+.eventTxt div {
+    float: left;
+    clear: right;
+}
+
+.eventTxt div p{
+    margin: 8px 0;
+    line-height: 1;
+}
+
+.eventTxt h3{
+    margin: 0;
+}
+
+.eventTxt h3 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.grayTxt {
+    color: gray;
+}
+
+.redTxt {
+    width: 345px;
+    margin-left: 10px;
+    color: #dc001a;
+}
+
+.eventDescription p {
+    text-align: justify;
+}
+
+/*---------------------------------------
+                EventsInfo
+-----------------------------------------*/
+
+.eventInfoTxt {
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+
+.eventInfoTxt div {
+    float: left;
+    clear: right;
+}
+
+.eventInfoTxt div > p{
+    margin-top: 0;
+}
+
+.eventInfoItem {
+    margin-top: 10px;
+}
+
+.eventDescription {
+    padding-top: 5px;
+    clear: both;
+}
+
+.eventDescription a {
+    color: #dc001a;
+    text-decoration: none;
+}
+
+/*---------------------------------------
+                EXHIBITIONS
+-----------------------------------------*/
+
+.redExhTxt {
+    color: #dc001a;
+    margin: 10px 0 0 0;
+}
+
+.exhibition > a p.redExhTxt {
+    color: #dc001a;
+    margin: 10px 0 0 0;
+}
+
+.exbitionsTxt h3{
+    margin: 5px 0 0 0;
+}
+
+.exbitionsTxt a{
+    color: #dc001a;
+    text-decoration: underline;
+}
+
+.exhibition {
+    margin-top: 10px;
+}
+
+.exhibitionsImg > img{
+    height: 176px;
+}
+
+.exhibitionCollection > a {
+    color: #dc001a;
+}
+
+.exhibition > a p{
+    color: #000000;
+}
+
+.exhibition > a > h3{
+    color: #000000;
+}
+/*---------------------------------------
+                Education Programm
+-----------------------------------------*/
+
+p.redEduTxt {
+    color: #dc001a;
+}
+
+/*---------------------------------------
+                Contacts
+-----------------------------------------*/
+
+#contacts {
+    margin: 0;
+    padding: 0;
+}
+
+#pageName {
+    color: #dc001a;
+    font-size: 12pt;
+}
+
+#pageName p {
+    margin: 0;
+}
+
+#university p{
+    margin: 1px;
+}

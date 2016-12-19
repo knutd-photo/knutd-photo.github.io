@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>КНУТД музей фотографії</title>
+    <meta charset="utf-8" />
+    <link href="../../Styles/Style.css" rel="stylesheet"/>
+	<style>
+	 .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+	
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+   .thumb   {
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+   .sign {
+    float: left; /* Выравнивание по правому краю */
+    padding: 7px; /* Поля внутри блока */
+    margin: 0px 0 0px 0px; /* Отступы вокруг */
+	text-align:center;
+	font-size:9pt;
+   }
+  
+     .sign2 {
+    float: right; /* Выравнивание по правому краю */
+    padding: 7px; /* Поля внутри блока */
+    margin: 0px 0px 0px 0px; /* Отступы вокруг */
+	text-align:center;
+    font-size:9pt;
+
+   }
+   .sign3 {
+    float: left; /* Выравнивание по правому краю */
+    padding: 7px; /* Поля внутри блока */
+    margin: 0px 0px 0px 0px; /* Отступы вокруг */
+	text-align:center;
+    font-size:9pt;
+	   }
+	   .sign4 {
+    float: right; /* Выравнивание по правому краю */
+    padding: 7px; /* Поля внутри блока */
+    margin: 0px 0px 0px 0px; /* Отступы вокруг */
+	text-align:center;
+    font-size:9pt;
+	   }
+    .sign figcaption {
+    margin: 0 auto 0px; /* Отступы вокруг абзаца */
+   }
+	</style>
+</head>
+<body> 
+ <canvas id="main-canvas"style="z-index:-1;position:fixed;top:0;left:0;"></canvas>
+    <div id="header">
+        <div id="logo">
+            <a href="../../uaMainPage.html">
+                <img src="../../img/layout/logo/logoUa.png" />
+            </a>
+        </div>
+        
+    </div>
+    <div id="container">
+        <div id="menu">
+            <div id="menuButton">
+                <ul>
+                    <li>
+                        <a href="#">ПРО НАС</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/AboutUs/uaHistory.html">історія</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">КОЛЕКЦІЇ</a>
+                        <ul>
+                            <li>
+                                <span></span><a href="#">друкована продукція</a>
+                                <ul>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a></li>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/Books/Books.html">книги</a></li>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна продукція</a></li>
+                            <li>
+                                <span></span><a href="#">фотографія</a>
+                                <ul>
+                                    <li><span></span><a href="../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a></li>
+                                    <li><span></span><a href="../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії студентів</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../ua/Events/uaEvents.html">ЗАХОДИ</a></li>
+                    <li>
+                        <a href="#">ВИСТАВКИ</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ПРОГРАМА НАВЧАННЯ</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсії</a></li>
+                            <li><span></span><a href="../../ua/EducationProgram/uaEducationSchool.html">школи та університети</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="opening"><p>ГОДИНИ РОБОТИ:</p></div>
+                <div class="schedule">
+                    <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                    <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+                </div>
+                <div class="contactInfo">
+                    <p class="contactInfo">КНУТД, Київ</p>
+                    <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                    <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+                </div>
+                <div id="map">
+                    <a href="">Карта</a>
+                </div>
+                <div id="socialLinks">
+                    <a id="faceBook" href="">
+                        <img src="../../img/facebook.jpg" />
+                    </a>
+                    <a id="google" href="">
+                        <img src="../../img/google.jpg" />
+                    </a>
+                    <a id="tweet" href="">
+                        <img src="../../img/tweet.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="slider">
+                <ul>
+                    <li><img src="../../img/img0.jpg" /></li>
+                    <li><img src="../../img/slider2.jpg" /></li>
+                    <li><img src="../../img/slider3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="news">
+                <p class="historyTitle">
+                    Історичний екскурс музейної сфери в області фотографії
+                </p>
+				 <figure class="sign">
+				 <img src="../../img/history/Андре Кертес “Медон”, 1924 рік.jpeg" alt="Андре Кертес “Медон”, 1924 рік"  height="300" class="leftimg">
+				 <figcaption>Андре Кертес “Медон”, 1924 рік</figcaption>
+				 </figure>
+                <p class="historyText">
+                    Фотографія завжди змінювала і змінює те, що зображує. А вміння фотографа полягає в тому, щоб керувати цими змінами.
+                </p>
+				
+                <p class="historyText">
+                    Дивлячись на фотографію ліворуч, ми неминуче задумаємося: хто на ній? Звідки він міг би йти? Куди їде цей паровоз? Можливо, несвідомо, але така думка промайне. Без всіх цих елементів кадр був би нудним і не привертав би уваги, але на той час це був один із шедеврів вуличної фотографії. Фото зроблене в маленькому містечку Медон у Франції в 1924 році. Десь посередині між винаходом фотоапарату і нашою цифровою ерою.
+                </p>
+                <p class="historyText">
+                    Історія фотографії нараховує багато імен. Але ми не можемо не згадати про деяких з них. Фотографію винайшли в 1839 році, коли француз Луї Дагер і англієць Генрі Фокс Талбот відкрили два, по-суті, протилежні процеси, які були покликані “закріпити тінь”. Але ідея, яка призвела до зародження фотографії виникла набагато раніше.
+                </p>
+                <p class="historyText">
+                    Фотографія цікава річ – потрібна темрява, щоб побачити світло. Світло створює фотографію, але воно ж є її найлютішим ворогом. Адже, якщо не контролювати світло, то від фото залишиться біла пляма.
+Що таке камера-обскура? Це просте явище, в яке складно повірити. Всього лише маленький отвір, який приносить зі собою світло. Світло, яке відтворює, наприклад, на стіні перевернуте і збільшене в 2 рази зображення навколишнього світу. І все завдяки фізиці.
+
+                </p>
+                <p class="historyText">
+                    Людське прагнення створити точний довголітній відбиток йде в глибину століть. Грецький письменник Пліній описує історію про дівчину, яка відмалювала на стіні тінь свого помираючого коханця. Її батько був настільки вражений тим, що вона зробила, що створив скульптуру. Бідній дівчині потрібен був всього лише один знімок, але до 30-х років 19 століття про це можна було тільки мріяти.
+                </p>
+				<figure class="sign2">
+				<img src="../../img/history/Камера-обскура в дії.jpg" alt="Камера-обскура в дії"  height="200" class="rightimg">
+                <figcaption>Андре Кертес “Медон”, 1924 рік</figcaption>
+				 </figure>
+				<p class="historyText"> 
+                    Те, що ранній період фотографії збігся з епохою, яку ми називаємо романтизмом не випадково. Багато думок і переживань того періоду підштовхнули людей до експериментів з фотографією. Уявіть собі, що ви людина того часу, що лежить на схилі пагорба, дивиться крізь прикриті повіки на небо і роздумує про те, як же зберегти цей момент на папері. Це цілком в дусі романтизму. Ніхто точно не скаже, коли ж була вперше використана камера-обскура, але є відомості про те, що вже в 16 столітті художники писали картини за допомогою камери-обскура, просто відмальовуючи контури зображень.
+                </p>
+				<p class="historyText">
+				Для появи фотографії потрібні були світлочутливі речовини. Вони були відомі ще за 100 років до її винаходу. Солі срібла, оксид брому і ще деякі речовини темніють під впливом світла. Так можна було отримати зображення, але не було можливості вчасно зупинити реакцію, знімок продовжував темніти поки не ставав чорним. У 1802 році, в Англії було опубліковано статтю про експеримент двох вчених, які вмочували в розчин солей срібла шматочки шкіри, прикладали до них листочки рослин і виставляли на сонце. Вони могли розрізнити малюнок листка але він продовжував темніти поки не зникав зовсім. Тобто, майже за 40 років до появи фотографії були двоє людей, які знали про цей ефект і хотіли закріпити його.
+               </p>
+			    <p class="historyTitle">
+                   Історія фотографії в особах
+                </p>
+				<p class="historyText">
+				Генрі Фокс Талбот був першим, хто намагався закріпити зникаюче зображення. Він був видатним вченим в галузі ботаніки і клинопису. Він досяг багато чого, але так і не навчився малювати. Саме тому Талбот хотів зробити фотографію реальністю, а не ефемерною теорією. Коли навесні 1834 року йому прийшла ідея з’єднати камеру обскуру з світлочутливими речовинами це була виграшна комбінація. Талботу вдалося досягти успіху. З його камер, які він називав мишоловками, вийшли відбитки, яких до того ніхто не робив. Це були негативи, з яких вченому вдалося зробити знімки. Але це не було кінцевою метою Талбота. Він розумів, яке майбутнє може стояти за фотографією і хотів створити процес, який дозволяв би створювати фотографії в будь-яких кількостях.
+У 1839 році у Талбота з’явився суперник. Луї Дагер представив французькій академіі наук абсолютно новий спосіб закріплення зображення. Він був живописцем і почав працювати над фотографією у 1824 році. Метод Дагера сильно відрізнявся від того, що придумав Талбот. Луї використовував для основи не папір, а відполіровані до дзеркального блиску металеві пластини. І на відміну від негативів Талбота, його метод давав справді унікальні зображення. Незважаючи на явні недоліки, “дагеротипи” справляють надзвичайне враження. Дагеротип виглядав як дзеркало з пам’яттю. Через те, що срібло лежить на поверхні пластини (а не вбирається в папір), створюється враження, що світло проходить крізь зображення і залишається відчуття тривимірності того, що ми бачимо. На пластині створюється готове зображення, а не негатив. Після зйомки дагеротип слід обробити розчином і прогріти паяльною лампою, інакше навіть пензлик змахне зображення з пластини.
+			  </p>
+			  <figure class="sign3">
+			  <img src="../../img/history/Генрі Фокс Талбот.jpg" alt="Генрі Фокс Талбот"  height="300" class="thumb">
+			 			  <figcaption>Андре Кертес “Медон”, 1924 рік</figcaption> </figure>
+              <figure class="sign4">
+			  <img src="../../img/history/Луї Дагер.jpg" alt="Луї Дагер"  height="300" class="thumb">
+			  <figcaption>Андре Кертес “Медон”, 1924 рік</figcaption>
+			  </figure>
+		      <p class="historyTitle">
+                   Людина, яка перетворила фотографію з ремесла в загальнодоступне захоплення
+              </p>
+			  <p class="historyText"> 
+			  Джородж Істман з Рочестера захопився фотографією через те, що жадав відобразити свої численні поїздки за кордон. Ця людина здійснила революцію в фотографії.
+Почалося все з того, що він придумав мотки фотоплівки. Через кілька років він придумав і вивів на ринок любительську фотокамеру “Кодак”.
+Слово “Кодак” нічого не означає, це було творінням Істмана, який вважав, що слова на літеру “К” гострі і актуальні. Його легше запам’ятати і у нього немає альтернативних значень. З цього почалося масове виробництво фотокамер в Америці, камер якими міг володіти кожен. Гаслом компанії була фраза “Ви натискаєте на кнопку, ми робимо все інше”.
+Компанія займалася технікою, проявленням, друкаванням і відправкою фотографій клієнту поштою та вкладенням у фотоапарат нового мотка плівки (в компанію відправлялася вся камера, плівку можна було витягти тільки в лабораторії).
+			  </p>
+			  <p class="historyText"> 
+			   Для популяризації своєї камери Істман розробив камеру спрямовану для дітей і назвав її “Брауні”.
+			  </p>
+			  <p class="historyText"> 
+				Ціна камери склала 1 долар, моток плівки 15 центів а проявлення 40 центів. При тому, що камери-конкуренти на ринку були від 35 до 100 доларів.
+			  </p>
+			  <p class="historyText"> 
+			  Це змінило імперію фотографії та перетворило її в республіку Кодак. Тепер, коли можна було зробити багато знімків, люди в кадрі почали посміхатися, стали виглядати більш природно.
+			  </p>
+			  <p class="historyText"> 
+			  Фото перетворилося на загальнодоступну річ. А історія фотографії наповнилась цікавими моментами і, часом, навіть несподіваними.
+			  </p>
+			  <p class="historyText">
+			  Фотосвіт змінився, змінилися й люди в кадрі. Багато хто зараз не дуже й задумується над тим, що стоїть за таким “звичайним” знімком і скільки люство пройшло, щоб могти зловити мить. Але ви тепер знаєте ще трохи більше, ніж інші.
+			  </p>
+			  <figure class="sign3">
+			  <img src="../../img/history/Перша дешева та популярна фотокамера “Брауні”.jpg" alt="Перша дешева та популярна фотокамера “Брауні”"  width="200" class="thumb">
+			 			  <figcaption>Перша дешева та популярна фотокамера “Брауні”</figcaption> </figure>
+              <figure class="sign4">
+			  <img src="../../img/history/Джордж Істман і Томас Едісон.jpg" alt="Джордж Істман і Томас Едісон"  width="275" class="thumb">
+			  <figcaption>Джордж Істман і Томас Едісон</figcaption>
+			  </figure>
+			
+			  
+		   </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftSide">
+            <div id="footLogo">
+                <img src="../../img/layout/logo/logoUa.png" />
+            </div>
+            <div class="contactInfo">
+                <p class="contactInfo">КНУТД, Київ</p>
+                <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+            </div>
+            <div class="schedule">
+                <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+            </div>
+        </div>
+        <div id="rightSide">
+            <div class="footerInfo">
+                <p><a>ПРО НАС</a></p>
+                <a href="../../ua/AboutUs/uaHistory.html">історія</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>КОЛЕКЦІЇ</a></p>
+                <a href="../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a>
+                <a href="../../ua/Collection/PrintedProducts/Books/Books.html">книги</a>
+                <a href="../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a>
+                <a href="../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна <br>продукція</a>
+                <a href="../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a>
+                <a href="../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії <br>студентів</a>
+                <a href="../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../ua/Events/uaEvents.html">ЗАХОДИ</a></p>
+            </div>
+            <div class="footerInfo">
+                <p><a>ВИСТАВКИ</a></p>
+                <a href="../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a>
+                <a href="../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a>
+                <a href="../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a>
+                <a href="../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>ПРОГРАМА<br /> НАВЧАННЯ</a></p>
+                <a href="../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсія</a>
+                <a href="../../ua/EducationProgram/uaEducationSchool.html">школи та<br /> університети</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../scripts/AcordionMenu.js"></script>
+    <script src="../../scripts/SliderScript.js"></script>
+<script src="../../js/TweenLite.min.js"></script>
+<script src="../../js/EasePack.min.js"></script>
+<script src="../../js/rAF.js"></script>
+<script src="../../js/canvasScript.js"></script>
+</body>
+</html>

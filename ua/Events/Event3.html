@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>КНУТД музей фотографії</title>
+    <meta charset="utf-8" />
+    <link href="../../Styles/Style.css" rel="stylesheet" />
+    <script src="../../scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $(function() {
+            $.get('../../eventsDescription.xml', function (data) {
+                var $xml = $(data);
+                $('#event3Header').html($xml.find("event3Header").text());
+                $('#event3LongContent').html($xml.find("event3LongContent").text().replace(/!br/gi, "<br/>"));
+                $('#event3ImgLink').attr("src", '../../' + $xml.find("event3ImgLink").text().trim());
+                $('#event3When').html($xml.find("even\t3When").text());
+                $('#event3Time').html($xml.find("event3Time").text());
+                $('#event3Where').html($xml.find("event3Where").text());
+            });
+        });
+    </script>
+</head>
+<body>
+ <canvas id="main-canvas"style="z-index:-1;position:fixed;top:0;left:0;"></canvas>
+    <div id="header">
+        <div id="logo">
+            <a href="../../uaMainPage.html">
+                <img src="../../img/layout/logo/logoUa.png" />
+            </a>
+        </div>
+
+    </div>
+    <div id="container">
+        <div id="menu">
+            <div id="menuButton">
+                <ul>
+                    <li>
+                        <a href="#">ПРО НАС</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/AboutUs/uaHistory.html">історія</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">КОЛЕКЦІЇ</a>
+                        <ul>
+                            <li>
+                                <span></span><a href="#">друкована продукція</a>
+                                <ul>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a></li>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/Books/Books.html">книги</a></li>
+                                    <li><span></span><a href="../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна продукція</a></li>
+                            <li>
+                                <span></span><a href="#">фотографія</a>
+                                <ul>
+                                    <li><span></span><a href="../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a></li>
+                                    <li><span></span><a href="../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії студентів</a></li>
+                                </ul>
+                            </li>
+                            <li><span></span><a href="../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../ua/Events/uaEvents.html">ЗАХОДИ</a></li>
+                    <li>
+                        <a href="#">ВИСТАВКИ</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a></li>
+                            <li><span></span><a href="../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ПРОГРАМА НАВЧАННЯ</a>
+                        <ul>
+                            <li><span></span><a href="../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсії</a></li>
+                            <li><span></span><a href="../../ua/EducationProgram/uaEducationSchool.html">школи та університети</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="opening"><p>ГОДИНИ РОБОТИ:</p></div>
+                <div class="schedule">
+                    <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                    <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+                </div>
+                <div class="contactInfo">
+                    <p class="contactInfo">КНУТД, Київ</p>
+                    <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                    <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+                </div>
+                <div id="map">
+                    <a href="">Карта</a>
+                </div>
+                <div id="socialLinks">
+                    <a id="faceBook" href="">
+                        <img src="../../img/facebook.jpg" />
+                    </a>
+                    <a id="google" href="">
+                        <img src="../../img/google.jpg" />
+                    </a>
+                    <a id="tweet" href="">
+                        <img src="../../img/tweet.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="slider">
+                <ul>
+                    <li><img src="../../img/img0.jpg" /></li>
+                    <li><img src="../../img/slider2.jpg" /></li>
+                    <li><img src="../../img/slider3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="news">
+                <p class="namePage" id="event3Header"></p>
+                <div class="eventInfoItem">
+                    <div class="eventImg">
+                        <img id="event3ImgLink" />
+                    </div>
+                    <div class="eventInfoTxt">
+                        <div class="grayTxt">
+                            <p>ДАТА:</p>
+                            <p>ЧАС:</p>
+                            <p>МІСЦЕ:</p>
+                        </div>
+                        <div class="redTxt">
+                            <p id="event3When"></p>
+                            <p id="event3Time"></p>
+                            <p id="event3Where"></p>
+                        </div>
+
+                    </div>
+                    <div class="eventDescription" >
+                        <div id="event3LongContent"></div>
+                        <a href="../../ua/Events/uaEvents.html">архів подій</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftSide">
+            <div id="footLogo">
+                <img src="../../img/layout/logo/logoUa.png" />
+            </div>
+            <div class="contactInfo">
+                <p class="contactInfo">КНУТД, Київ</p>
+                <p class="contactInfo">тел.: +380 67 509 43 93</p>
+                <p class="contactInfo"><a href="mailto:mfoto@knutd.com">mfoto@knutd.com</a></p>
+            </div>
+            <div class="schedule">
+                <p class="contactInfo">Ср-Пт 11:00 - 18:00</p>
+                <p class="contactInfo">Сб-Нд 10:00 - 15:30</p>
+            </div>
+        </div>
+        <div id="rightSide">
+            <div class="footerInfo">
+                <p><a>ПРО НАС</a></p>
+                <a href="../../ua/AboutUs/uaHistory.html">історія</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>КОЛЕКЦІЇ</a></p>
+                <a href="../../ua/Collection/PrintedProducts/Magazine/MagazineAlbums.html">журнали</a>
+                <a href="../../ua/Collection/PrintedProducts/Books/Books.html">книги</a>
+                <a href="../../ua/Collection/PrintedProducts/PhotoCards/PhotoCardsAlbums.html">фото листівки</a>
+                <a href="../../ua/Collection/Souvenirs/Souvenirs.html">сувенірна <br>продукція</a>
+                <a href="../../ua/Collection/Photography/PhotoArchive/PhotoArchive.html">архіф фото</a>
+                <a href="../../ua/Collection/Photography/StudentsPhoto/StudentsPhotos.html">фотографії <br>студентів</a>
+                <a href="../../ua/Collection/PhotoTechnic/PhotoTechnic.html">фототехніка</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../ua/Events/uaEvents.html">ЗАХОДИ</a></p>
+            </div>
+            <div class="footerInfo">
+                <p><a>ВИСТАВКИ</a></p>
+                <a href="../../ua/Exhibitions/Current/uaCurrentExhibitions.html">поточні</a>
+                <a href="../../ua/Exhibitions/Last/uaLastExhibitions.html">минулі</a>
+                <a href="../../ua/Exhibitions/Upcoming/uaUpcomingExhibitions.html">майбутні</a>
+                <a href="../../ua/Exhibitions/Catalog/uaExhibitionsCatalog.html">каталог виставок</a>
+            </div>
+            <div class="footerInfo">
+                <p><a>ПРОГРАМА<br /> НАВЧАННЯ</a></p>
+                <a href="../../ua/EducationProgram/uaEducationGuidedTours.html">екскурсія</a>
+                <a href="../../ua/EducationProgram/uaEducationSchool.html">школи та<br /> університети</a>
+            </div>
+            <div class="footerInfo">
+                <p><a href="../../ua/Contacts/uaContacts.html">КОНТАКТИ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../scripts/AcordionMenu.js"></script>
+    <script src="../../scripts/SliderScript.js"></script>
+<script src="../../js/TweenLite.min.js"></script>
+<script src="../../js/EasePack.min.js"></script>
+<script src="../../js/rAF.js"></script>
+<script src="../../js/canvasScript.js"></script>
+</body>
+</html>

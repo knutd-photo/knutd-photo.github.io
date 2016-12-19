@@ -1,0 +1,14 @@
+﻿.pageNumbers{
+    margin: 0 auto;
+    padding-left: 230px;
+}
+
+.easyPaginateNav a {
+    padding: 5px;
+    color: #dc001a;
+}
+
+    .easyPaginateNav a.current {
+        font-weight: bold;
+        text-decoration: underline;
+    }
