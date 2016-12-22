@@ -94,7 +94,7 @@
                 ctx.beginPath();
                 ctx.moveTo(p.x, p.y);
                 ctx.lineTo(p.closest[i].x, p.closest[i].y);
-                ctx.strokeStyle = "rgba(255,230,210," + p.active + ")"; //ine color
+                ctx.strokeStyle = "rgba(255,230,210," + p.active + ")"; //line color
                 ctx.stroke();
             }
         }
@@ -104,8 +104,8 @@
         ctx.clearRect(0, 0, width, height);
         for (var i in points) {
             if (points.hasOwnProperty(i)) {
-                points[i].active = 0.9;           //line opacity
-                points[i].circle.active = 0.9;    //circle opacity
+                points[i].active = 0.3;           //line opacity
+                points[i].circle.active = 0.3;    //circle opacity
                 drawLines(points[i]);
                 points[i].circle.draw();
             }
